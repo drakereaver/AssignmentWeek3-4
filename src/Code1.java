@@ -1,5 +1,14 @@
 import java.util.*;
 
+class Transaction {
+    String id;
+    double fee;
+    String ts;
+    Transaction(String i, double f, String t) {
+        id = i; fee = f; ts = t;
+    }
+}
+
 class FeeSorter {
     void bubbleSort(List<Transaction> list) {
         int n = list.size();
